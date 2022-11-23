@@ -1,2 +1,1 @@
-# prev_partidas_copa
-Previsão Jogos da Copa do Mundo 2022
+# Previsão Jogos da Copa do Mundo do Catar 2022
