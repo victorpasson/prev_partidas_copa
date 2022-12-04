@@ -5,7 +5,6 @@ import seaborn as sbn
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from scipy.stats import poisson
-import time
 
 st.set_page_config(layout="centered", 
                     page_title="Previsão Copa do Mundo - Catar 2022")
