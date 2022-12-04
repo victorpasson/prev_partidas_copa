@@ -14590,20 +14590,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Previs%C3%B5es:-Copa-do-Mundo-da-FIFA---Catar-2022">Previs&#245;es: Copa do Mundo da FIFA - Catar 2022<a class="anchor-link" href="#Previs%C3%B5es:-Copa-do-Mundo-da-FIFA---Catar-2022">&#182;</a></h1><div align="justify">
 <br>
-A Copa do Mundo é uma competição internacional realizada pela Federação Internacional de Futebol Associação(FIFA) que ocorre de quatro em quatro anos. Durante esse período entre copas as seleções passam por diversas competições dentro de seu próprio continente e por diversos amistosos. Esse período conta também com as eliminatórias, que buscam reduzir o número de equipes que competem no Mundial. Teoricamente, essas seriam as melhores seleções do Mundo nesse período preparatório e a coroação da melhor ocorreria com a taça do mundial. Considerado atualmente o evento esportivo mais assistido no mundo e economicamente possui potencial gigantesco.
+A Copa do Mundo é uma competição internacional realizada pela Federação Internacional de Futebol Associação (FIFA) que ocorre de quatro em quatro anos. Durante esse período entre copas as seleções passam por diversas competições dentro de seu próprio continente e por diversos amistosos. Esse período conta também com as eliminatórias, que buscam reduzir o número de equipes que competem no Mundial. Teoricamente, essas seriam as melhores seleções do Mundo e esse período preparatório terminaria com a coroação da melhor na entrega da taça do mundial.
+<br>
+<br>
+Hoje, a Copa do Mundo é considerada o evento esportivo mais assistido no mundo e economicamente possui potencial gigantesco. Isso é refletido no recorde de faturamento da FIFA de 7,5 bilhões de dólades.
 <br>
 <br>
 <img class="center" src="https://cdn.pixabay.com/photo/2018/06/14/16/36/football-3475163_960_720.jpg" width="800" height="1000">
 <br>
 <br>
-Os jogos realizados nesse período demonstram o potencial dessas seleções e suas forças. A partir das partidas, gols feitos, gols levados, ataques, cartões, impedimentos e diversas outras variáveis montam-se rankings das seleções, um desses é o Ranking FIFA. No entanto, ainda possuímos o Ranking ELO, que possuem jeitos de cálculos diferentes e podem apresentar rankeamento diferenciado entre as seleções.
+Os jogos realizados na copa e no período entre copas demonstram o potencial das seleções e suas forças. A partir das partidas, gols feitos, gols levados, ataques, cartões, impedimentos e diversas outras variáveis a FIFA monta seu próprio ranking das melhores seleções do mundo. No entanto, também existem rankings alternativos, como o Ranking ELO, que possuem jeitos de cálculos diferentes e podem apresentar divergência quanto ao posicionamento das seleções.
 <br>
 <br>
-A questão é que por mais que tentamos atribuir valores para as incertezas que estão intrisecas a natureza do próprio esporte, não podemos dar com certeza o que de fato irá acontecer em uma competição por esses valores. O fato do espaço de possibilidades ser tão grande é o que torna tão interessante. Estatisticamente falando a variância presente nos jogos de futebol é grande o suficiente para a própria incerteza das previsões estatísticas. Essa variância grande coloca nos detalhes as questões que podem definir o placar e uma partida. Com isso, se repetirmos uma partida com os mesmos times 100 vezes, teríamos diversas partidas com valores diferentes e não somente um resultado.
+A criação desse rankeamento reflete a tentativa dos humanos de tentarem antecipar resultados, seja a inflação do ano que vem ou qual seleção irá ganhar uma partida. A questão é que por mais que tentamos atribuir valores para as incertezas dentro do futebol, não podemos dar com certeza o que de fato irá acontecer em uma competição. O fato de o espaço de possibilidades ser tão grande é o que torna tão interessante o esporte.
 <br>
 <br>
-Por isso, quando estamos fazendo um modelo para a previsão de uma partida, ou da copa, estamos quantificando todas as incertezas que podem acontecer. Vamos pegar como exemplo 10 partidas de Brasil x França, é possivel que aconteça:
-
+Estatisticamente falando, a variância presente nos jogos de futebol é grande o suficiente para a própria incerteza das previsões estatísticas. Essa variância grande coloca nos detalhes as questões que podem definir o placar. Com isso, se repetirmos uma partida com os mesmos times 100 vezes, teríamos diversas partidas com valores diferentes e não somente um resultado.
+<br>
+<br>
+Por isso, quando estamos fazendo um modelo para a previsão de uma partida, ou da copa, estamos quantificando todas as incertezas que podem acontecer. Vamos pegar como exemplo 10 partidas de Brasil x França e delas tivemos os seguintes resultados:
 <ol>
    <li>Brasil 1 x 2 França</li>
    <li>Brasil 2 x 0 França</li>
@@ -14620,10 +14625,10 @@ Por isso, quando estamos fazendo um modelo para a previsão de uma partida, ou d
 Todos esses resultados são possíveis, mas veja que alguns aconteceram com mais frequência do que outros. Assim, a tentativa estatística não é prever exatamente o que vai acontecer, mas quantificar os placares que podem acontecer a partir das variáveis disponíveis. No nosso exemplo acima, por exemplo, o mais provável é que o Brasil ganhe, mas nada impede que a França ganhe, só seria menos provável.
 <br>
 <br>
-Uma frase que sempre me vem na mente quando vejo qualquer previsão estatística sobre futebol veio de Marco Tardelli, ex-jogador italiano que venceu a Copa do Mundo de 1982 onde o Brasil foi eliminado pela itália por 3 a 2. Nessa frase Tardelli reflete perfeita mente sobre a imprevisibilidade do futebol e a probabilidades baixas aconteçam: "Se nós jogassemos 20 vezes contra o Brasil nós perderiamos 19, menos naquele dia".
+Uma frase que sempre me vem na mente quando vejo qualquer previsão estatística sobre futebol veio de Marco Tardelli, ex-jogador italiano que venceu a Copa do Mundo de 1982 onde o Brasil foi eliminado pela Itália por 3 a 2. Nessa frase Tardelli reflete perfeitamente sobre a imprevisibilidade do futebol e a chance de baixas probabilidades acontecerem: "Se nós jogássemos 20 vezes contra o Brasil nós perderíamos 19, menos naquele dia".
 <br>
 <br>
-Dessa forma, o objetivo desse projeto é a criação de um modelo para a previsão de resultados dos jogos da copa do mundo e como resultado final a previsão do vencedor da copa. Essa modelagem não tem a pretenção de fazer uma representação do real, mas entregar um equacionamento útil para a quantificação das probabilidades que podem ocorrer.
+Dessa forma, o objetivo desse projeto é a criação de um modelo para a previsão de resultados dos jogos da copa do mundo e, como resultado final, a previsão do vencedor da competição. Essa modelagem não tem a pretensão de fazer uma representação do real, mas entregar um equacionamento útil para a quantificação das probabilidades que podem ocorrer.
 </div>
 </div>
 </div>
@@ -14637,79 +14642,81 @@ Dessa forma, o objetivo desse projeto é a criação de um modelo para a previs�
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Previs%C3%A3o-da-Partida:">Previs&#227;o da Partida:<a class="anchor-link" href="#Previs%C3%A3o-da-Partida:">&#182;</a></h2>
 <div align="justify">
-Prever o resultado de uma Copa nada mais é do que prever seu campeão. Para prevermos o campeão de uma copa precisamos antes prever: a partida da final, as semis, as quartas, as oitavas e a fase de grupo. Ou seja, tudo passa pela previsão de partidas individuais.
-<br>
+Prever o resultado de uma Copa nada mais é do que prever seu campeão. Para prevermos o campeão precisamos antes prever: as seleções que disputarão a final, as semis, as quartas, as oitavas e a fase de grupo. Ou seja, tudo passa pela previsão de partidas individuais.
+br>
 <br>
 Dessa forma, a primeira questão que nos é colocada é: como podemos prever o resultado de uma partida individual?
 <br>
 <br>
-Uma alternativa poderia ser pegar as médias de gols de cada seleção e arredondarmos para um número inteiro, dessa forma, caso uma seleção tenha média de gols mais alta do que a outra, a ela seria atrelada a vitória, caso a média seja a mesma, a partida seria considerada empate.
+Uma possibilidade ser pegar as médias de gols de cada seleção e arredondarmos para um número inteiro, dessa forma, caso uma seleção tenha média de gols mais alta do que a outra, a ela seria atrelada a vitória, caso a média seja a mesma, a partida seria considerada empate.
 <br>
 <br>
-No entanto, essa solução retiraria diversas aleatoriedades que podem acontecer para o resultado de uma partida, pois, a média de gols de uma seleção poderia ser de diversos outros resultados possíveis. 
+No entanto, essa solução retiraria diversas aleatoriedades que podem acontecer para o resultado de uma partida, pois, a média de gols de uma seleção poderia ser de diversos outros contextos históricos possíveis.
 <br>
 <br>
-Das diversas possibilidades de soluções, a distribuição de Poisson é uma que pode nos ajudar nesse problema, pois ela é a principal referência para a análise de dados de contanges (0, 1, 2, 3) e será resumida a seguir.
+Das diversas possibilidades de soluções, a distribuição de Poisson pode nos ajudar nesse problema, pois ela é a principal referência para a análise de dados de contagens (0, 1, 2, 3) e será resumida a seguir.
 </div><h3 id="Distribui%C3%A7%C3%A3o-Poisson:">Distribui&#231;&#227;o Poisson:<a class="anchor-link" href="#Distribui%C3%A7%C3%A3o-Poisson:">&#182;</a></h3>
 <div align="justify">
-Resumidamente, a distribuição de Poisson descreve resultados de experiências nos quais contamos acontecimentos que ocorrem aleatoriamente, mas com uma taxa média definida. Ela é aplicável quando o número de possiveis ocorrências de um valor (como a quantidade de gols de um time em uma partida) é muito maior do que o número médio de ocorrências. 
+Resumidamente, a distribuição de Poisson descreve resultados de experiências nos quais contamos acontecimentos que ocorrem aleatoriamente, mas com uma taxa média definida. Ela é aplicável quando o número de possíveis ocorrências de um valor (como a quantidade de gols de um time em uma partida) é muito maior do que o número médio de ocorrências.
 <br>
 <br>
-Um segundo argumento para sua utilização é porquê diversos pesquisadores utilizaram essa distribuição para previsão em seus modelos futebolísticos. A quantidade de artigos demonstrando que para dados de futebol, contagens de gols em partidas, é uma boa opção ja sendo foi confirmada em diversos artigos.
+Uma segunda colocação para a utilização dessa distribuição é que diversos pesquisadores utilizaram essa distribuição para previsão em seus modelos futebolísticos. A quantidade de artigos demonstrando que para dados de futebol - contagens de gols em partidas - é uma boa opção, já sendo foi confirmada em diversos artigos.
 <br>
 <br>
-Para sua utilização só precisamos da média de uma variável, ou seja, a quantidade média de gols. Com isso, jogamos a quantidade média de gols esperada de um time em como λ (lambda) na formula. A letra 'x' seria a quantidade de gols para tal partida. Com esses dois parâmetros a função nos retornaria a probabilidade de x gols em uma partida para um time de média λ.
+Para sua utilização só precisamos da média de uma variável, ou seja, a quantidade média de gols. Com isso, jogamos a quantidade média de gols esperada de um time na variável λ (lambda) da formula. A letra 'x' seria a quantidade de gols para tal partida. Com esses dois parâmetros a função nos retornaria à probabilidade de x gols em uma partida para um time de média λ.
 <br>
 <br>
 <img class="center" src="https://study.com/cimages/multimages/16/poisson1a.jpg">
 <br>
 <br>
 <h3>Resultado da Partida:</h3>
-Primeiro, com a distribuição de Poisson calculamos a probabilidade da seleção fazer uma quantidade número de gols em uma partida. A segunda questão que nos é colocada agora é: como calcular o resultado de uma partida?
+Primeiro, com a distribuição de Poisson, calculamos a probabilidade de a seleção fazer uma quantidade “x” de gols em uma partida. Com isso, calculamos as probabilidades de uma seleção fazer 0, 1, 2, 3, 4, 5, etc. gols em uma partida.
 <br>
 <br>
-Tratando como a probabilidade de uma seleção ser independente da outra, poderiamos calcular o placar esperado multiplicando a probabilidade de cada quantidade de gols de uma seleção, pela probabilidade da outra. A imagem abaixo nos ajuda a entender essa ideia.
+A segunda questão que nos é colocada agora é: como calcular o resultado da partida?
 <br>
+<br>
+Tratando a probabilidade de gols de uma seleção ser independente da outra, poderíamos calcular o placar esperado multiplicando a probabilidade de cada quantidade de gols, pela probabilidade da outra. A imagem abaixo nos ajuda a entender essa ideia.<br>
 <br>
 <img class="center" src="https://fivethirtyeight.com/wp-content/uploads/2018/06/boice-WORLDCUP-02.png?w=712">
 <br>
 <br>
-Na parte superior à direita temos a Distribuição de Probabilidade de Poisson para a seleção brasileira. Veja que a probabilidade da seleção fazer 2 gols é muito maior do que a de outros resultados, nossa média deve ficar por volta desse valor.
+Na parte superior à direita temos a Distribuição de Probabilidade de Poisson para a seleção brasileira. Veja que a probabilidade de a seleção fazer 2 gols é muito maior do que a de outros resultados, nossa média deve ficar por volta desse valor.
 <br>
 <br>
-Em baixo, à esquerda, temos a Distribuição de Probabilidade de Poisson para a Croácia. Atente-se que a probabilidade da corácia fazer 0 gols em uma partida é muito grande.
+Em baixo, à esquerda, temos a Distribuição de Probabilidade para a Croácia. Atente-se que a probabilidade de a Croácia fazer 0 gols em uma partida é muito grande.
 <br>
 <br>
-Ambos os valores foram vistos para a previsão da copa de 2014.
+Obs.: os valores foram vistos para a previsão da copa de 2014.
 <br>
 <br>
-Dessa forma, para obtermos as probabilidades dos placares, basta multiplicar as probabilidades das duas seleções. Como resultado tem-se o Heatmap na parte de baixo à direita. 
+Da imagem decorre que para obtermos as probabilidades dos placares basta multiplicar as probabilidades de gols das duas seleções. Como resultado tem-se o Heatmap na parte de baixo à direita.
 <br>
 <br>
-Interpretá-lo é muito simples: a probabilidade de um placar de 2 a 0 para o Brasil é de 19%, ou seja, seria o placar mais provável. No entanto, prever placares é muito mais arriscado do que prever o resultado de uma partida no geral e para fazermos isso basta somarmos todos os resultados que resultariam em tal acontecimento, por exemplo:
+Interpretá-lo é muito simples: a probabilidade de um placar de 2 a 0 para o Brasil é de 19%, ou seja, seria o placar mais provável. No entanto, prever placares é muito mais arriscado do que prever o resultado de uma partida – ganhar, perde ou empate - e para fazermos isso somamos todos os resultados que resultariam em tal acontecimento, por exemplo:
 <br>
 <br>
 - A Probabilidade de Empate na partida é a soma das probabilidades de empate em cada resultado (0 x 0, 1 x 1, 2 x 2, etc.);  
 <br>
 
 - A Probabilidade de Vitória do Brasil é a soma das probabilidades das combinações de placares em que ele vence (1 x 0, 2 x 1, 2 x 0, 7 x 1, etc.);
-- A Probabilidade de Vitória da Crácia é a soma das probabilidades de todas as combinações em que ele vence (1 x 0, 2 x 1, 2 x 0, 7 x 1, etc.).
+- A Probabilidade de Vitória da Croácia é a soma das probabilidades de todas as combinações em que ele vence (1 x 0, 2 x 1, 2 x 0, 7 x 1, etc.)..
 <br>
 
-Assim, obteremos as probabilidades de resultado da partida.
+Assim, obteremos as probabilidades de cada resultado.
 <br>
 <br>
 Resumindo, a distribuição de gols de duas seleções, vamos considerar 1 e 2, respectivamente são:<br>
     S¹ ~ Poisson(m1)<br>
-    s² ~ Poisson(m2)<br>
+    S² ~ Poisson(m2)<br>
     <br>
 Onde:  <br>
 m1 - média de gols da seleção 1;<br>
 m2 - média de gols da seleção 2.<br>
-<br><br>
+<br>
 Em que S¹ e S² são independentes.
 <br><br>
-E para obter as probabilidades de resultado da partida multiplicamos S¹ com S².
+E para obter as probabilidades de resultado da partida multiplicamos S¹ com S² e somamos os resultados.
 </div>
 </div>
 </div>
@@ -14723,19 +14730,20 @@ E para obter as probabilidades de resultado da partida multiplicamos S¹ com S²
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="M%C3%A9dia-de-Gols-de-Cada-Time-em-uma-Partida">M&#233;dia de Gols de Cada Time em uma Partida<a class="anchor-link" href="#M%C3%A9dia-de-Gols-de-Cada-Time-em-uma-Partida">&#182;</a></h3>
 <div align="justify">
-Com o bloco anterior resolvemos o problema de previsão de resultado da partida, no entanto, quando olhamos para a fórmula apresentada anteriormente nos defrontamos com outro problema: como definir a média de gols de cada time em uma partida?
+Com o bloco anterior resolvemos o problema de previsão de resultado individuais, no entanto, quando olhamos para a fórmula apresentada anteriormente nos defrontamos com outro problema: como definir a média de gols de cada time em uma partida?
 <br><br>
-Novamente, esse problema poderia apresentar diversas soluções. Uma delas seria a própria média histórica de gols de cada time. No entanto, a copa do mundo possui peculiaridades que simplesmente a média de cada time não captasse. Jogar amistosos e campeonatos continentais não é a mesma coisa do que jogar a copa do mundo, da mesma forma que jogar em 1950 não é jogar como em 2022.
+Novamente, esse problema poderia apresentar diversas soluções. Uma delas seria a própria média histórica de gols de cada time. No entanto, a copa do mundo possui peculiaridades que simplesmente a média histórica de cada time não capta. Jogar amistosos e campeonatos continentais não é a mesma coisa do que jogar a copa do mundo, da mesma forma que jogar em 1950 não é jogar como em 2022.
 <br><br>
-O gráfico abaixo, retirado do site globo.com, mostra como caminhou a média de gols ao longo das competições. Dessa média histórica podemos interpretar que historicamente as médias ficam em grande maioria entre 2 e 3 gols por partida. Dessa forma, iremos considerar uma média de 2,5 gols para essa copa.
+O gráfico abaixo, retirado do site globo.com, mostra como caminhou a média de gols ao longo do torneiro mundial. Desse gráfico podemos interpretar que historicamente as médias ficam entre 2 e 3 gols por partida. Dessa forma, iremos considerar uma média de 2,5 gols para essa copa.
 <br><br>
 <img class="center" src="https://uploaddeimagens.com.br/images/004/172/056/full/Captura_da_Web_22-11-2022_11926_ge.globo.com.jpeg?1669090784">
 <br><br>
     m = m¹ + m²<br>
-    m = 2,75<br>
+    m = 2,5<br>
     <br>
-Nosso trabalho agora é distribuir a quantidade de gols que iria para cada equipe em uma partida. Para isso usaremos o conceito de "fator de força". Esse fator, que é utilizado por diferentes rankings, tenta quantificar o quão poderosa é uma seleção. Se nos colocarmos esse fator entre seleções em porcentagem e multiplicarmos pela média de gols considerada teremos a quantidade de cada seleção para jogarmos na fórmula de Poisson. É o que está descrito na fórmula abaixo:
-<br><br>
+A média definida foi para a partida, nosso trabalho agora é distribuir a quantidade de gols que iria para cada seleção. Para isso usaremos o conceito de "fator de força".<br><br>
+Esse fator, que é utilizado por diversos rankings, tenta quantificar a quão poderosa é uma seleção. Se colocarmos esse fator em porcentagem (entre 0 e 1) e multiplicarmos pela média de gols considerada teremos a quantidade de gols da média que irá para cada seleção. Assim, se jogarmos essa média na fórmula de Poisson anteriormente definida estamos aptos a prever o resultado da partida da copa do mundo. Isso é o que está descrito na fórmula abaixo:
+    <br><br>
     m¹ = m . f¹ / (f¹ + f²)<br>
     m² = m - m²<br>
     <br>
@@ -14745,10 +14753,10 @@ m¹ - média de gols da seleção 1;<br>
 m² - média de gols da seleção 2;<br>
 f¹ - força da Seleção 1;<br>
 f² - força da Seleção 2.<br>
+<br>
+Chega-se a última questão: como definir o fator de força de uma seleção?
 <br><br>
-E por fim, a última questão a ser resolvida é: como definir o fator de força de uma seleção?
-<br><br>
-A forma de cálculo da força utilizada em nosso trabalho será algo simples. Como o <b>Ranking da Fifa</b> e o <b>Ranking Elo</b> apresenta divergencia na pontuação das seleções, iremos fazer uma média simples ta transformação da pontuação de ambos em um intervalo (a, 1), com "a" no nosso projeto sendo 0,15. Nesse caso, a seleção mais fraca de cada ranking terá o valor 0,15 e a seleção mais forte 1.
+A forma de cálculo da força utilizada em nosso trabalho será algo simples. Como o Ranking da Fifa e o Ranking Elo apresenta divergência na pontuação das seleções, iremos fazer uma média simples da transformação da pontuação de ambos em um intervalo (a, 1), com "a" no nosso projeto sendo 0,15. Nesse caso, a seleção mais fraca de cada ranking terá o valor 0,15 e a seleção mais forte 1.
 </div><h3 id="Utiliza%C3%A7%C3%A3o-do-Python:">Utiliza&#231;&#227;o do Python:<a class="anchor-link" href="#Utiliza%C3%A7%C3%A3o-do-Python:">&#182;</a></h3><h4 id="Importando-as-blibliotecas-necess%C3%A1rias:">Importando as blibliotecas necess&#225;rias:<a class="anchor-link" href="#Importando-as-blibliotecas-necess%C3%A1rias:">&#182;</a></h4>
 </div>
 </div>
@@ -14782,7 +14790,7 @@ A forma de cálculo da força utilizada em nosso trabalho será algo simples. Co
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Lendo-os-dados:">Lendo os dados:<a class="anchor-link" href="#Lendo-os-dados:">&#182;</a></h4><p>Nos dados a seguir teremos os pontos dos rankins das seleções e mais algumas informações.</p>
+<h4 id="Lendo-os-dados:">Lendo os dados:<a class="anchor-link" href="#Lendo-os-dados:">&#182;</a></h4><p>Nos dados a seguir teremos os pontos dos rankings das seleções e mais algumas informações.</p>
 
 </div>
 </div>
@@ -15319,7 +15327,7 @@ Placar da Partida: 1x1
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Veja que cada vez que a Função for rodada ela gera novos placares. Pois, a partir da distribuição de probabilidade, gera valores a partir da própria incerteza inerente ao futebol. Essa função gera o resultado para um Jogo somente, temos agora que rodar essa função infinitas vezes para ver quais resultados mais ocorreriam. Assim, temos as probabilidades de cada resultado e como consequência o resultado mais provável e improvável para a partida.</p>
+<p>Veja que cada vez que a função for rodada ela gera novos placares. Pois, a partir da distribuição de probabilidade, gera valores possíveis.<br><br>Essa função gera o resultado para um Jogo somente, temos agora que rodar essa função infinitas vezes para ver quais resultados mais ocorreriam. Assim, temos as probabilidades de cada resultado e, como consequência, o resultado mais provável e improvável para a partida.</p>
 
 </div>
 </div>
@@ -15529,9 +15537,9 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div align="justify">
-Ao executarmos, obtemos que a probabilidade de Vitória do Brasil em uma disputa com a Argentina é de 40,4%, enquanto a probabilidade de Vitória da Argentina é de 32,7%. Esse valor é discricionado no Heatmap acima, nele podemos ver a probabilidade de cada resultado, exemplificando, a probabilidade de 2 a 1 para o Brasil é de 8,7%. O placar mais provável contém 12,71% de chances de acontecer, 1 a 1. O segundo placar mais provável seria uma vitória de 1 a 0 para o Brasil, com 11,23% de probabilidade.
+Ao executarmos obtemos que a probabilidade de Vitória do Brasil em uma disputa com a Argentina é de 40,4%. Enquanto a probabilidade de Vitória da Argentina é de 32,7%. Esse valor é discriminado no Heatmap acima, nele podemos ver a probabilidade de cada resultado. Exemplificando, a probabilidade de 2 a 1 para o Brasil é de 8,7%. O placar mais provável - 1 a 1 - contém 12,71% de chances de acontecer. O segundo placar mais provável seria uma vitória de 1 a 0 para o Brasil, com 11,23% de probabilidade.
 <br><br>
-Agora podemos executar essa função para todos os jogos que irão acontecer na fase de grupos da competição. Assim, iremos obter a probabilidade dos resultado. O resultado que temos como referência é sempre a partir da seleção na variável "seleção1".
+Agora podemos executar essa função para todos os jogos que irão acontecer na fase de grupos da competição. O resultado que temos como referência é sempre a partir da seleção na variável "seleção1".
 </div>
 </div>
 </div>
@@ -16250,11 +16258,11 @@ Agora podemos executar essa função para todos os jogos que irão acontecer na 
 <h2 id="Previs%C3%A3o-da-Copa-do-Mundo">Previs&#227;o da Copa do Mundo<a class="anchor-link" href="#Previs%C3%A3o-da-Copa-do-Mundo">&#182;</a></h2><p><br></p>
 <div align="justify">
 Já passamos pela previsão de gols de um time em uma partida e pela probabilidade de resultados do confronto entre times. Nosso trabalho, por fim, é aplicar as funções acima simulando os grupos definidos no sorteio da copa.
-<br>
+<br><br>
 Após simularmos os grupos, conseguimos pegas os dois primeiros classificados e passarmos para as oitavas de finais, a partir da lógica adotada pela FIFA para a definição dos confrontos. Simulando novamente o resultado de cada jogos conseguimos ir passando fase por fase até chegarmos à final.
 </div><h3 id="Primeira-Fase---Fase-de-Grupos">Primeira Fase - Fase de Grupos<a class="anchor-link" href="#Primeira-Fase---Fase-de-Grupos">&#182;</a></h3><p><br></p>
 <div align="justify">
-Criamos uma função para que simulemos todos os jogos internos em um grupo. Dela obtemos as pontuações, saldo de gols, gols prós. Precisamos de tudo isso para a definição dos critérios de desempates caso ocorram pontuações iguals. Por fim, ordenamos o Dataframe por cada critério de prioridade.
+Criamos uma função para simularmos todos os jogos internos em um grupo. Dela obtemos as pontuações, saldo de gols, gols prós. Precisamos de tudo isso para a definição dos critérios de desempates caso ocorram pontuações iguais. Por fim, ordenamos o Dataframe por cada critério de prioridade.
 </div>
 </div>
 </div>
@@ -16347,9 +16355,9 @@ Criamos uma função para que simulemos todos os jogos internos em um grupo. Del
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Segunda-Fase---Eliminat%C3%B3rias">Segunda Fase - Eliminat&#243;rias<a class="anchor-link" href="#Segunda-Fase---Eliminat%C3%B3rias">&#182;</a></h3><p><br></p>
 <div align="justify">
-A fase eliminatória possui uma peculiaridade que deverá ser abarcada pelo nosso modelo: disputa de pênaltis.
+ A fase eliminatória possui uma peculiaridade que deverá ser abarcada pelo nosso modelo: disputa de pênaltis.
 <br><br>
-Como dito nas explicações iniciais do projeto, modelagens não tem a pretenção de fazer uma representação fiel do real, mas entregar um equacionamentos útil para a quantificação das probabilidades. Assim, abstraímos muitos fatores e concluímos que teoricamente, se duas seleções empataram em uma fase mata-mata, elas possuem as mesmas possibilidades e capacidades de avançar de fase. Assim, uma escolha randomica entre as duas seria uma possibilidade viável.
+Como dito nas explicações iniciais do projeto, modelagens não tem a pretensão de fazer uma representação fiel do real, mas entregar um equacionamento útil para a quantificação das probabilidades. Assim, abstraímos muitos fatores e concluímos que teoricamente se duas seleções empataram em uma fase mata-mata, elas possuem as mesmas possibilidades e capacidades de avançar de fase. Assim, uma escolha randômica entre as duas seria uma possibilidade viável.
 </div>
 </div>
 </div>
@@ -16396,73 +16404,6 @@ Como dito nas explicações iniciais do projeto, modelagens não tem a pretenç�
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">47</span><span class="o">*</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">47</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
-       [0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]])</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16570,7 +16511,7 @@ Como dito nas explicações iniciais do projeto, modelagens não tem a pretenç�
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Agora podemos simular uma copa somente para obter o resultado. Cada vez que for rodado, pode ser que um novo campeão seja tido. No caso abaixo foi a seleção da França.</p>
+<p>Agora podemos simular uma copa apenas, para obter o resultado. Cada vez que for rodado, pode ser que um novo campeão seja dado. No caso abaixo foi a seleção da França.</p>
 
 </div>
 </div>
@@ -17531,8 +17472,8 @@ Como dito nas explicações iniciais do projeto, modelagens não tem a pretenç�
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Isso quer dizer que qualquer seleção pode ser campeã?</p>
-<p>Teoricamente sim, pois mesmo que mínima a probabilidade pode acontecer.</p>
-<p>Por isso, para prever a probabilidade de cada seleção ser campeã poderiamos rodar esse código infinitas vezes e verificar de qual valor cada probabilidade de vitória para cada seleção se aproximaria. Como isso requeriria uma capacidade computacional enorme, teremos que definir um valor suficientemente grande.</p>
+<p>Teoricamente sim pois, mesmo que mínima a probabilidade, pode acontecer.</p>
+<p>Por isso, para prever a probabilidade de cada seleção ser campeã poderíamos rodar esse código infinitas vezes e verificar de qual valor cada probabilidade de campeã se aproximar cada seleção. Como isso requer uma capacidade computacional enorme, teremos que definir um valor suficientemente grande.</p>
 <p>Rodarei para um valor de 10 mil simulações.</p>
 
 </div>
@@ -18078,7 +18019,7 @@ IA: &#34;Simulação Finalizada!&#34;
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Nosso modelo agora previu que a o Brasil é a seleção com a maior probabilidade de ser campeão da competição.</p>
+<p>Nosso modelo previu que a o Brasil é a seleção com a maior probabilidade de ser campeão da competição.</p>
 <p>Por fim, apenas fazemos manipulações com os valores para retornar a: probabilidade de cada seleção cair em cada fase e a probabilidade de cada seleção avançar para cada fase.</p>
 
 </div>
