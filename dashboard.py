@@ -228,7 +228,7 @@ coluna_3.markdown('<p align="center" style="font-size:35px">'+"%.2f" % (vencer.l
 coluna_11, coluna_12, colunameio, coluna_21, coluna_22 = st.columns(5)
 ## Métricas
 with coluna_11:
-    st.subheader('Ranking Fifa')
+    st.subheader('Nº Fifa')
     st.metric("Posição", selecoes.loc[selecao1, "PosiçãoRankingFIFA"])
 
     st.markdown("---")
@@ -237,14 +237,13 @@ with coluna_11:
     st.subheader("Destaque")
     st.text(" ")
     st.text(" ")
-    st.text(" ")
     st.subheader(selecoes.loc[selecao1, "JogadorDestaque"])
 
 with coluna_12:
     st.markdown("---")
     st.metric("Pontos", selecoes.loc[selecao1, "PontosRankingFIFA"])
 
-    st.subheader('Raking Elo')
+    st.subheader('N° Elo')
     st.metric("Pontos", selecoes.loc[selecao1, "PontosEloRating"])
 
     st.markdown("---")
@@ -255,10 +254,10 @@ with coluna_21:
     st.metric("Posição", selecoes.loc[selecao2, "PosiçãoRankingFIFA"])
 
     st.markdown("---")
+
     st.metric("Posição", selecoes.loc[selecao2, "PosiçãoEloRating"])
 
     st.subheader("Destaque")
-    st.text(" ")
     st.text(" ")
     st.text(" ")
     st.subheader(selecoes.loc[selecao2, "JogadorDestaque"])
