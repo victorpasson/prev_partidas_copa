@@ -168,6 +168,8 @@ def GerarHeatmap(selecao1, selecao2):
 
 ## Aplicativo
 st.text("Está pelo celular? Deite a tela para visualização adequada!")
+st.text(" ")
+st.text(" ")
 # Definindo as seleções
 coluna_esquerda_1, coluna_esquerda_2, coluna_direita_1, coluna_direita_2  = st.columns(4)
 
