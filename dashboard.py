@@ -274,3 +274,16 @@ with coluna_22:
 
 st.header("Probabilidade dos Placares")
 GerarHeatmap(selecao1=selecao1, selecao2=selecao2)
+
+st.markdown(f'''
+---
+Feito por: João Victor.<br>
+Redes sociais:
+
+<a href="https://victorpasson.github.io/" rel="__blank"><button style="background-color:#2F7FBF;">Porfólio</button></a> | 
+<a href="https://www.linkedin.com/in/victorpasson/" rel="__blank"><button style="background-color:#2F7FBF;">Linkedin</button></a> |
+<a href="https://github.com/victorpasson" rel="__blank"><button style="background-color:#2F7FBF;">GitHub</button></a> |
+<a href="https://twitter.com/victorpasson" rel="__blank"><button style="background-color:#2F7FBF;">Twitter</button></a>
+''', unsafe_allow_html=True)
+
+
