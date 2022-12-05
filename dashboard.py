@@ -167,7 +167,7 @@ def GerarHeatmap(selecao1, selecao2):
     st.pyplot(fig)
 
 ## Aplicativo
-
+st.text("Está pelo celular? Deite a tela para visualização adequada!")
 # Definindo as seleções
 coluna_esquerda_1, coluna_esquerda_2, coluna_direita_1, coluna_direita_2  = st.columns(4)
 
